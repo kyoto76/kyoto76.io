@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="esti.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Córdoba</title>
+</head>
+
+<body style="padding: 20px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Cordoba</h1>
+                
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="text-center">Municipios</h3>
+                <select id="municipios" class="form-select mb-3">
+                </select>
+            </div>
+            <div class="col-md-6">
+                <div id="map" style="height: 300px;"></div>
+            </div>
+        </div>
+
+        <h2 class="mt-4 text-center">clima</h2>
+
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-striped table-bordered">
+                    <tbody>
+                        <tr>
+                            <th>Temperatura actual</th>
+                            <td id="temperaturaActual"></td>
+                        </tr>
+                        <tr>
+                            <th>Sensación térmica</th>
+                            <td id="sensacionTermica"></td>
+                        </tr>
+                        <tr>
+                            <th>Temperatura mínima y máxima</th>
+                            <td id="temperaturaMinMax"></td>
+                        </tr>
+                        <tr>
+                            <th>Presión atmosférica</th>
+                            <td id="presionAtmosferica"></td>
+                        </tr>
+                        <tr>
+                            <th>Humedad</th>
+                            <td id="humedad"></td>
+                        </tr>
+                        <tr>
+                            <th>Velocidad y dirección del viento</th>
+                            <td id="viento"></td>
+                        </tr>
+                        <tr>
+                            <th>Nubosidad</th>
+                            <td id="nubosidad"></td>
+                        </tr>
+                        <tr>
+                            <th>Precipitación</th>
+                            <td id="precipitacion"></td>
+                        </tr>
+                        <tr>
+                            <th>Hora de salida y puesta del sol</th>
+                            <td id="salidaPuestaSol"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+
+</html>
